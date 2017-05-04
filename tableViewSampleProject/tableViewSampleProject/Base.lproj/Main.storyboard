@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableViewSampleProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,97 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3q-To-9vw">
+                                <rect key="frame" x="80" y="507" width="215" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.338054048" blue="0.89003094390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="6Mq-de-XjD"/>
+                                    <constraint firstAttribute="height" constant="60" id="dQZ-Ex-GFe"/>
+                                </constraints>
+                                <state key="normal" title="ここ押すと画面遷移"/>
+                                <connections>
+                                    <segue destination="kbg-1D-BqA" kind="presentation" id="rvt-Z3-82f"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="detailMain_miniature-dachshund" translatesAutoresizingMaskIntoConstraints="NO" id="1kC-yv-gbu">
+                                <rect key="frame" x="-13" y="117" width="400" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71653825770000001" green="1" blue="0.32544322930000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V3q-To-9vw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02j-iw-UTD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1kC-yv-gbu" secondAttribute="bottom" priority="750" constant="270" id="2Yv-Zh-pKY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V3q-To-9vw" secondAttribute="bottom" constant="100" id="ET8-9F-cEe"/>
+                            <constraint firstItem="V3q-To-9vw" firstAttribute="top" secondItem="1kC-yv-gbu" secondAttribute="bottom" constant="110" id="aHA-h4-KcP"/>
+                            <constraint firstItem="1kC-yv-gbu" firstAttribute="centerX" secondItem="V3q-To-9vw" secondAttribute="centerX" id="u92-b9-X8p"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-186.40000000000001" y="22.938530734632685"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F77-9Q-QGT">
+            <objects>
+                <viewController id="kbg-1D-BqA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ebi-9z-qD0"/>
+                        <viewControllerLayoutGuide type="bottom" id="GY5-ST-ccG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jz4-SZ-Nax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン完了しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztu-9Y-rNX">
+                                <rect key="frame" x="100" y="323" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ztu-9Y-rNX" firstAttribute="centerY" secondItem="Jz4-SZ-Nax" secondAttribute="centerY" id="19W-Th-J8t"/>
+                            <constraint firstItem="ztu-9Y-rNX" firstAttribute="centerX" secondItem="Jz4-SZ-Nax" secondAttribute="centerX" id="GeJ-za-GYZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cV7-oy-VHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="23"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Ahu-Rl-P7W">
+            <objects>
+                <tableViewController id="gfs-1O-5y1" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6UQ-jf-MbN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RUz-gh-p6J">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RUz-gh-p6J" id="Hso-ZR-MbN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gfs-1O-5y1" id="Dfw-Se-BkI"/>
+                            <outlet property="delegate" destination="gfs-1O-5y1" id="OVK-Uv-tZB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxi-E5-sYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="detailMain_miniature-dachshund" width="400" height="280"/>
+    </resources>
 </document>
