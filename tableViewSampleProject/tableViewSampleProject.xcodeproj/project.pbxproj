@@ -12,6 +12,9 @@
 		EC4BDE481EB9DD0E00A68FD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4BDE461EB9DD0E00A68FD9 /* Main.storyboard */; };
 		EC4BDE4A1EB9DD0E00A68FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4BDE491EB9DD0E00A68FD9 /* Assets.xcassets */; };
 		EC4BDE4D1EB9DD0E00A68FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4BDE4B1EB9DD0E00A68FD9 /* LaunchScreen.storyboard */; };
+		EC4BDE731EBAA93400A68FD9 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4BDE721EBAA93400A68FD9 /* DataModel.swift */; };
+		EC4BDE761EBAAD0000A68FD9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4BDE751EBAAD0000A68FD9 /* TableViewController.swift */; };
+		EC4BDE781EBAAD8200A68FD9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4BDE771EBAAD8200A68FD9 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EC4BDE491EB9DD0E00A68FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC4BDE4C1EB9DD0E00A68FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4BDE4E1EB9DD0E00A68FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4BDE721EBAA93400A68FD9 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EC4BDE751EBAAD0000A68FD9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EC4BDE771EBAAD8200A68FD9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		EC4BDE411EB9DD0E00A68FD9 /* tableViewSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				EC4BDE741EBAABBA00A68FD9 /* Models */,
 				EC4BDE421EB9DD0E00A68FD9 /* AppDelegate.swift */,
 				EC4BDE441EB9DD0E00A68FD9 /* ViewController.swift */,
 				EC4BDE461EB9DD0E00A68FD9 /* Main.storyboard */,
 				EC4BDE491EB9DD0E00A68FD9 /* Assets.xcassets */,
 				EC4BDE4B1EB9DD0E00A68FD9 /* LaunchScreen.storyboard */,
 				EC4BDE4E1EB9DD0E00A68FD9 /* Info.plist */,
+				EC4BDE751EBAAD0000A68FD9 /* TableViewController.swift */,
+				EC4BDE771EBAAD8200A68FD9 /* TableViewCell.swift */,
 			);
 			path = tableViewSampleProject;
+			sourceTree = "<group>";
+		};
+		EC4BDE741EBAABBA00A68FD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC4BDE721EBAA93400A68FD9 /* DataModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4BDE781EBAAD8200A68FD9 /* TableViewCell.swift in Sources */,
 				EC4BDE451EB9DD0E00A68FD9 /* ViewController.swift in Sources */,
 				EC4BDE431EB9DD0E00A68FD9 /* AppDelegate.swift in Sources */,
+				EC4BDE731EBAA93400A68FD9 /* DataModel.swift in Sources */,
+				EC4BDE761EBAAD0000A68FD9 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,7 @@
 				EC4BDE531EB9DD0E00A68FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
